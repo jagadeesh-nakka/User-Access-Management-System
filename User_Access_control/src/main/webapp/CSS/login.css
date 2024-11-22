@@ -1,0 +1,153 @@
+@charset "ISO-8859-1";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#head {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#lst {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#lst li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+#lst li a:hover {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.login-container {
+    margin-top: 120px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-container h2 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #ddd;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #f9a826;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #f9a826;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff7300;
+    transform: scale(1.05);
+}
+
+.links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    font-size: 14px;
+    color: #f9a826;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.links a:hover {
+    color: #ff7300;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px;
+    }
+
+    #lst {
+        gap: 10px;
+    }
+
+    #lst li a {
+        font-size: 14px;
+    }
+}
